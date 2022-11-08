@@ -41,16 +41,6 @@ export default function SignIn() {
     if (status.ok) router.push(status.url);
   }
 
-  // Google Handler function
-  async function handleGoogleSignin() {
-    signIn("google", { callbackUrl: `${baseUrl}` });
-  }
-
-  // Github Login
-  async function handleGithubSignin() {
-    signIn("github", { callbackUrl: `${baseUrl}` });
-  }
-
   return (
     <section className="w-3/4 mx-auto flex flex-col gap-10">
       <div className="title">
